@@ -47,5 +47,9 @@ fun HalamanForm(
             value = noHp,
             onValueChange = {noHp = it },
             label = { Text(text = "No Hp") })
+        OutlinedTextField(
+            value = alamat,
+            onValueChange = {alamat = it },
+            label = { Text(text = "Alamat") })
     }
 }
