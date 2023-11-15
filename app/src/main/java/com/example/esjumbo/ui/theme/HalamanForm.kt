@@ -14,8 +14,12 @@ fun HalamanForm(
 ) {
     var nama by rememberSaveable {
         mutableStateOf("") }
+
     var noHp by remember {
         mutableStateOf("") }
+
     var alamat by remember {
-        mutableStateOf("") }
+        mutableStateOf("")
+    }
+    var listData: MutableList<String> = mutableListOf(nama, noHp, alamat)
 }
